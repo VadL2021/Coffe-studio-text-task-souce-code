@@ -1,0 +1,49 @@
+.footer__menu
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    gap: 56px
+    width: 1600px
+    @media (max-width: 1650px)
+        width: 790px
+        margin: 16px auto 0 auto
+    height: 226px
+    margin: 32px auto 0 auto
+    .column
+        width: 275.2px
+        height: 100%
+        .column__title
+            font-family: 'Montserrat Medium'
+            font-weight: 500
+            font-size: 18px
+            line-height: 26px
+            @media (max-width: 1650px)
+                font-size: 16px
+                line-height: 24px  
+            color: $footer-primary-t-color
+        .column__content
+            display: flex
+            flex-direction: column
+            width: fit-content
+            height: fit-content
+            gap: 16px
+            margin: 16px 0 0 0
+            list-style-type: none
+        .column__item
+            width: fit-content
+            height: fit-content
+
+            font-family: 'Montserrat Regular'
+            font-weight: 400
+            font-size: 16px
+            line-height: 24px
+            @media (max-width: 1650px)
+                font-size: 14px
+                line-height: 22px  
+            .link
+                text-decoration: none
+                color: $footer-secondary-t-color
+
+
+
+

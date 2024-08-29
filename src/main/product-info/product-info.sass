@@ -1,0 +1,18 @@
+@import './gallery/gallery.sass'
+@import './primary-info/primary-info.sass'
+@import './product-brief-description/product-brief-description.sass'
+@import './product-price/product-price.sass'
+@import './product-actions/product-actions.sass'
+.product-info
+    display: flex
+    flex-direction: row
+    gap: 64px
+    width: 1600px
+    height: 620px
+    @media (max-width: 1650px)
+        width: 800px
+        height: fit-content
+        flex-direction: column
+        gap: 32px
+    margin: 0 auto 0 auto
+    // background-color: #90dd13

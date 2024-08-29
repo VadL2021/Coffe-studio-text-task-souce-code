@@ -1,0 +1,81 @@
+.product-details
+    width: 1600px
+    @media (max-width: 1650px)
+        width: 800px
+        height: 390px
+        margin: 12px auto 0 auto
+    height: 328px
+    margin: 24px auto 0 auto
+    .tabs
+        display: flex
+        flex-direction: row
+        gap: 24px
+        width: fit-content
+        @media (max-width: 1650px)
+            width: 100%
+            gap: 0
+            justify-content: space-between
+            margin: 12px auto 0 0
+        height: 36px
+        margin: 24px auto 0 0
+        .tab
+            width: fit-content
+            height: 36px
+            padding: 0 24px 0 24px
+            background-color: $main-inactive-tab-b-color
+            color: $main-inactive-tab-t-color
+            border: 1px solid $main-inactive-tab-border-color
+
+            font-family: 'Montserrat Regular'
+            font-style: normal
+            font-weight: 400
+            font-size: 14px
+            line-height: 20px
+            &.active
+                width: fit-content
+                height: 36px
+                padding: 0 24px 0 24px
+                background-color: $main-active-tab-b-color
+                color: $main-active-tab-t-color
+                border: 1px solid $main-active-tab-border-color
+
+                font-family: 'Montserrat Regular'
+                font-style: normal
+                font-weight: 400
+                font-size: 14px
+                line-height: 20px
+    .tab-content
+        display: flex
+        flex-direction: column
+        width: 1264px
+        @media (max-width: 1650px)
+            width: 800px
+        height: 228px
+        margin: 16px auto 0 0
+        &__title
+            font-family: 'Montserrat Medium'
+            font-style: normal
+            font-weight: 500
+            font-size: 16px
+            line-height: 24px
+            color: $main-t-primary-color
+        &__paragraph
+            width: fit-content
+            @media (max-width: 1650px)
+                width: 800px
+            height: fit-content
+            margin: 4px 0 4px 0
+
+            font-family: 'Montserrat Regular'
+            font-style: normal
+            font-weight: 400
+            font-size: 16px
+            line-height: 24px
+            color: $main-t-primary-color
+
+
+
+                
+
+
+

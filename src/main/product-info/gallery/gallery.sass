@@ -1,0 +1,32 @@
+.gallery
+    display: flex
+    flex-direction: row
+    gap: 32px
+    width: 805px
+    height: 620px
+    .side-photos-preview
+        display: flex
+        flex-direction: column
+        gap: 16px
+        width: 141px
+        height: 620px
+    .side-photo-container
+        box-sizing: border-box
+        width: 141px
+        height: 143px
+        overflow: hidden
+        &:hover
+            border: solid 3px $main-gallery-hihtlight-color
+            border-radius: 4px
+        .active
+            opacity: 70%
+            &:hover
+                border: 0
+        .side-photo
+            width: 141px
+            height: 157px
+            object-fit: cover
+    .selected-photo
+        width: 632px
+        height: 620px
+        object-fit: cover

@@ -1,0 +1,85 @@
+.product-header
+    display: flex
+    flex-direction: column
+    gap: 16px
+    margin: 24px auto 0 auto
+    width: 1600px
+    @media (max-width: 1650px)
+        width: 800px
+    height: 88px
+    &__bread-crumbs
+        display: flex
+        flex-direction: row
+        width: fit-content
+        height: 24px
+        align-items: center
+
+        font-family: 'Montserrat Regular'
+        font-weight: 400
+        font-size: 16px
+        line-height: 24px
+        @media (max-width: 1650px)
+            font-size: 14px
+            line-height: 16px
+    &__bread-crumbs-separator
+        display: inline-block
+        width: 8px
+        height: 2px
+        margin: auto 0 auto 8px
+        background-color: $main-chain-separator-color
+        &_last
+            display: inline-block
+            width: 8px
+            height: 2px
+            margin: auto 0 auto 8px
+            background-color: $main-chain-last-separator-color
+    &__bread-crumbs-chain
+        display: inline-block
+        margin: 0 0 0 8px
+        color: $main-chain-t-color
+    &__bread-crumbs-end
+        display: inline-block  
+        margin: 0 0 0 8px
+        color: $main-t-primary-color
+
+    &__title
+        display: flex
+        flex-direction: row
+        align-items: center
+        width: fit-content
+        height: 48px
+    &__return-button
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        gap: 4px
+        width: 107px
+        height: 36px
+        border: 0
+        background-color: $main-anchor-b-color
+
+        font-family: 'Montserrat Regular'
+        font-weight: 400
+        font-size: 16px
+        line-height: 20px
+        color: $main-anchor-t-color
+        text-decoration: none
+        user-select: none
+    &__product-name
+        height: fit-content
+        width: fit-content
+        margin: 0 0 0 24px
+
+        font-family: 'Montserrat Regular'
+        font-style: normal
+        font-weight: 300
+        font-size: 40px
+        line-height: 48px
+        @media (max-width: 1650px)
+            font-size: 18px
+            line-height: 26px
+        display: flex
+        align-items: center
+        text-align: center
+        color: $main-t-primary-color

@@ -1,0 +1,28 @@
+@import './product-header/product-header.sass'
+@import './product-info/product-info.sass'
+@import './product-details/product-details.sass'
+@import './recomendations/recomendations.sass'
+@import './subscription/subscription.sass'
+.main
+    display: flex
+    flex-direction: column
+    width: 100%
+    height: fit-content
+    background-color: $main-b-color 
+    &__separator
+        width: 1600px
+        @media (max-width: 1650px)
+            width: 800px
+            margin: 12px auto 12px auto
+        height: 1px
+        margin: 24px auto 24px auto
+        background-color: $main-separator-color
+    &__product-actions-separator
+        width: 100%    
+        @media (max-width: 1650px)
+            width: 800px
+            margin: 12px auto 12px auto
+        height: 1px
+        margin: 24px auto 24px auto
+        background-color: $main-separator-color
+
